@@ -1,0 +1,36 @@
+<nav class="navbar bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink="/dashboard">
+      <img src="../../../assets/imagenes/logo-proy.png" alt="Dashboard" width="80" height="70" class="d-inline-block align-text-center">
+        VecSolutions
+    </a>
+    <h1>AGENDA</h1>
+    <button type="submit" class="btn btn-light navbar-text" routerLink="/login">
+      Cerrar sesión
+    </button>
+  </div>
+</nav>
+
+<div class="d-grid gap-2 d-md-flex col-12 m-2 mx-auto ">
+  <button type="submit" class="btn btn-light" routerLink="/dashboard">
+    <i class="fas fa-arrow-left">
+    </i>
+  </button>
+
+  <div class="d-grid gap-2 d-md-flex mx-auto">
+    <form class="d-flex" role="search">
+      <input class="form-control" type="search" placeholder="Buscar" aria-label="Search">
+      <button class="btn btn-outline-success" type="submit">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+    </form>
+  </div>
+
+  <div class="d-grid gap-2 d-md-flex">
+    <button class="btn btn-outline-primary" type="submit" routerLink="/agenda">
+    <i class="fa-solid fa-calendar-plus"></i>  Nueva Cita
+    </button>
+  </div>
+</div>
+
+<img class="calendar" src="../../../assets/imagenes/calendario.png" alt="calendar"/>
