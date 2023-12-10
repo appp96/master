@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AngularFireAuth } from '@angular/fire/compat/auth';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { UntypedFormBuilder, UntypedFormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
 import { FirebaseErrorService } from 'src/app/services/firebase-error.service';
@@ -11,11 +11,11 @@ import { FirebaseErrorService } from 'src/app/services/firebase-error.service';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-  loginUsuario: FormGroup;
+  loginUsuario: UntypedFormGroup;
   loading: boolean = false;
 
   constructor(
-    private fb: FormBuilder,
+    private fb: UntypedFormBuilder,
     private afAuth: AngularFireAuth,
     private toastr: ToastrService,
     private router: Router,

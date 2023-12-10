@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { UntypedFormBuilder, UntypedFormGroup, Validators } from '@angular/forms';
 import { AngularFireAuth } from '@angular/fire/compat/auth';
 import { ToastrService } from 'ngx-toastr';
 import { Router } from '@angular/router';
@@ -11,11 +11,11 @@ import { FirebaseErrorService } from 'src/app/services/firebase-error.service';
   styleUrls: ['./registrar.component.css'],
 })
 export class RegistrarComponent implements OnInit {
-  registrarUsuario: FormGroup; 
+  registrarUsuario: UntypedFormGroup; 
   loading: boolean = false;
 
   constructor(
-    private fb: FormBuilder,
+    private fb: UntypedFormBuilder,
     private afAuth: AngularFireAuth,
     private toastr: ToastrService,
     private router: Router,
